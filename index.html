@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Gradient Background Generator (with Animation &amp; Download)</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Background Generator 🎨</title>
+  <!-- Link external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gradient Background Generator 🎨</h1>
+    <div class="controls">
+      <label>Color 1: <input type="color" id="color1" value="#ff6b6b"></label>
+      <label>Color 2: <input type="color" id="color2" value="#4dabf7"></label>
+      <label>Angle: <input type="range" id="angle" min="0" max="360" value="90"></label>
+      <span id="angleValue">90°</span>
+      <button id="copyBtn">Copy CSS</button>
+      <button id="downloadBtn">Download PNG</button>
+    </div>
+    
+    <div class="modes">
+      <label><input type="radio" name="mode" value="manual" checked> Manual</label>
+      <label><input type="radio" name="mode" value="animate"> Animate Angle</label>
+      <label><input type="radio" name="mode" value="rainbow"> Rainbow Cycle 🌈</label>
+    </div>
+  
+    <div class="preview"></div>
+    <pre id="cssCode"></pre>
+  </div>
+
+  <!-- Load html2canvas from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <!-- Link external JS -->
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
